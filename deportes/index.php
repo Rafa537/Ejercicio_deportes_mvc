@@ -14,7 +14,6 @@
     }
     spl_autoload_register('cargarClase');
 
-    // Enrutamiento básico
     if (isset($_GET['c']) && isset($_GET['a'])) {
         $controller = $_GET['c'];
         $accion = $_GET['a'];
@@ -44,4 +43,5 @@
         <a href="index.php?c=cUsuario&a=showRegistro">Registro</a>
         <?php
     }
+
 ?>
